@@ -241,17 +241,6 @@ class DialogFilter (private val backData: (DataSort) -> Unit) : DialogFragment()
 
                 )
             }
-
-
-
-
-
-
-
-
-
-
-
             dialog!!.dismiss()
 
         }

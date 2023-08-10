@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:layout_margin ="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp">
+
+
+
+            <ImageView
+                android:id="@+id/image_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_image"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/txt_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audi RS Q8 1, 2020"
+            android:layout_margin="5dp"
+            android:textColor="@color/name_car_color"
+
+            android:textSize="24sp"/>
+
+
+        <TextView
+            android:id="@+id/txt_car_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 700 000 Р"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+           >
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/txt_car_mileage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25 000 км"
+                    android:layout_marginTop="8dp"
+
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+
+                <TextView
+                    android:id="@+id/txt_car_door"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5 дверей"
+                    android:layout_marginTop="8dp"
+
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/txt_car_engine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4л/600л/Бензин"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txt_car_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Оранжевый"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_car_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Москва"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:layout_weight="1">
+
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="centerCrop"
+                    android:background="@null"
+                    android:src="@drawable/favorite"/>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

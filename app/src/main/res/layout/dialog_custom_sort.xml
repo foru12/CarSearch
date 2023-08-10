@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="7dp"
+        android:background="@drawable/rel_bg"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="-5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/compareToUp_sw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/in_ascending_order"
+                android:textSize="26sp"
+                android:checked="false"
+                android:layout_margin="20dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                app:trackTint="@color/switch_track_selector"
+                app:thumbTint="@color/switch_thumb_selector"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/compareToDown_sw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/in_descending_order"
+                android:textSize="26sp"
+                android:checked="false"
+                android:layout_margin="20dp"
+                app:trackTint="@color/switch_track_selector"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                app:thumbTint="@color/switch_thumb_selector"/>
+
+
+
+
+            <Button
+                android:id="@+id/btnSort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/sort"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

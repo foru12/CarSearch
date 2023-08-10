@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Spinner
+            android:id="@+id/spinner_marka"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/spinner_model"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/spinner_years"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/spinner_bg"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+
+        <EditText
+            android:id="@+id/ed_price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ed_bg"
+            android:digits="1234567890"
+            android:hint="@string/add_car_price_txt"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/ed_mileage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ed_bg"
+            android:digits="1234567890"
+            android:hint="@string/add_car_mileage_txt"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="Показать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

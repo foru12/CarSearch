@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TestPizza</string>
+    <string name="title_home">Search</string>
+    <string name="title_dashboard">Add</string>
+    <string name="title_notifications">Favorites</string>
+    <string name="add_car">Разместить объявление</string>
+    <string name="my_announcements">Мои объявления</string>
+    <string name="add_car_name_txt">Название</string>
+    <string name="add_car_price_txt">Цена</string>
+    <string name="add_car_mileage_txt">Пробег</string>
+    <string name="add_car_door_txt">Двери</string>
+    <string name="add_car_engine_txt">Двигатель</string>
+    <string name="add_car_color_txt">Цвет</string>
+    <string name="in_ascending_order">По возрастанию</string>
+    <string name="in_descending_order">По Убыванию</string>
+    <string name="sort">Сортировать</string>
+
+    <string name="ready">Готово</string>
+    <string name="delete">Удалить фильтры</string>
+    <string name="check">✓</string>
+    <string name="as">✓</string>
+    <string name="task">предложений</string>
+
+</resources>

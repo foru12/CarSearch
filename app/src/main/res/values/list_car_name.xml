@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="name_array">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Changan</item>
+        <item>Chery</item>
+        <item>Chevrolet</item>
+        <item>Citroen</item>
+        <item>Daewoo</item>
+        <item>EXEED</item>
+        <item>Ford</item>
+        <item>Geely</item>
+        <item>Haval</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Infiniti</item>
+        <item>Jeep</item>
+        <item>Jetour</item>
+        <item>Kia</item>
+        <item>LADA(ВАЗ)</item>
+        <item>Land Rover</item>
+        <item>Lexus</item>
+        <item>Mazda</item>
+        <item>Mercedes-Benz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="model_array">
+        <item>11             </item>
+        <item>11 1           </item>
+        <item>1111           </item>
+        <item>1111           </item>
+        <item>11111          </item>
+        <item>11111          </item>
+        <item>11111          </item>
+        <item>11111          </item>
+        <item>11111-         </item>
+        <item>11111          </item>
+        <item>1111           </item>
+        <item>11             </item>
+        <item>1              </item>
+        <item>1              </item>
+    </string-array>
+</resources>
+
+
+

@@ -35,9 +35,9 @@ class DialogFilter (private val backData: (DataSort) -> Unit) : DialogFragment()
     private lateinit var listModel : ArrayList<String>
 
     private var years: String = ""
-    private var nameMarka: String = ""
+    private var nameMarka: String? = null
     private var posMarkaInt: Int = 0
-    private var nameModel: String = ""
+    private var nameModel: String? = null
     private var id : Int = 0
     private val defaultList: List<String> = listOf("")
 
@@ -131,10 +131,12 @@ class DialogFilter (private val backData: (DataSort) -> Unit) : DialogFragment()
                                 position: Int,
                                 id: Long
                             ) {
+                                if (position != 0){
+                                    nameModel = dialogViewModel.getDataModel(posMarkaInt)
+                                        .get(position -1).namesModel.toString()
+                                    Log.e("MARKA", "--> " +nameModel)
+                                }
 
-                                nameModel = dialogViewModel.getDataModel(posMarkaInt)
-                                    .get(position).namesModel.toString()
-                                Log.e("MARKA", "--> " +nameModel)
 
 
                             }
@@ -161,26 +163,6 @@ class DialogFilter (private val backData: (DataSort) -> Unit) : DialogFragment()
             }
         })
 
-      /*  spinnerModel.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-
-                posModel = dialogViewModel.getDataModel(posMarkaInt)
-                    .get(position).namesModel.toString()
-                Log.e("MARKA", "--> " +posModel)
-
-
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-
-        })*/
 
         spinnerYears.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
@@ -202,6 +184,7 @@ class DialogFilter (private val backData: (DataSort) -> Unit) : DialogFragment()
 
             var edPriceInt: String? = ""
             var edMileageInt: String? = ""
+
             if(edPrice.text.toString() != ""){
                 edPriceInt = edPrice.text.toString()
             }else{
@@ -220,12 +203,15 @@ class DialogFilter (private val backData: (DataSort) -> Unit) : DialogFragment()
             if(nameMarka == ""){
                 nameMarka = null.toString()
             }
-            if(nameModel == ""){
-                nameModel = null.toString()
-            }
+
+
+
+
             var a = nameModel
             var b =  nameMarka
-            var c = years.toInt()
+            var c = years
+
+
 
             Log.e("DataFilter", "Price" + "-->" + edPriceInt)
             Log.e("DataFilter", "Mileage"+"-->" + edMileageInt)
@@ -233,14 +219,30 @@ class DialogFilter (private val backData: (DataSort) -> Unit) : DialogFragment()
             Log.e("DataFilter", "-->" + b)
             Log.e("DataFilter", "-->" + c)
 
-            REQUEST_CODE_LIST = DataSort(
-                nameMarka,
-                nameModel ,
-                years.toInt(),
-                edPriceInt?.toLong(),
-                 edMileageInt?.toLong()
 
-            )
+
+
+            if(years == ""){
+                REQUEST_CODE_LIST = DataSort(
+                    nameMarka,
+                    nameModel ,
+                    null,
+                    edPriceInt?.toLong(),
+                    edMileageInt?.toLong()
+
+                )
+            }else{
+                REQUEST_CODE_LIST = DataSort(
+                    nameMarka,
+                    nameModel ,
+                    years.toInt(),
+                    edPriceInt?.toLong(),
+                    edMileageInt?.toLong()
+
+                )
+            }
+
+
 
 
 

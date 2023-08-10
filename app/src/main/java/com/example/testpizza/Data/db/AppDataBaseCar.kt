@@ -32,8 +32,6 @@ abstract class AppDataBaseCar : RoomDatabase() {
             INSTANCE?.let { database ->
                 scope.launch {
                     populateDatabaseCar(database.carDao())
-
-
                 }
             }
         }
